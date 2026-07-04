@@ -247,8 +247,8 @@ The two-stage approach keeps AI response time under ~5 ms even on dense boards w
 ### Start the stack
 
 ```bash
-git clone https://github.com/trimoyeeg/deton8.git
-cd deton8/chain-reaction
+git clone https://github.com/algoAkshay/deton8.git
+cd deton8
 docker compose up -d --build
 ```
 
