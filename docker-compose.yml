@@ -6,7 +6,7 @@ services:
   backend:
     build:
       context: ./backend
-    image: trimoyeeg/deton8-backend:latest
+    image: deton8-backend:latest
     ports:
       - "4000:4000"
     environment:
@@ -27,7 +27,7 @@ services:
       context: ./frontend
       args:
         - NEXT_PUBLIC_BACKEND_URL=${NEXT_PUBLIC_BACKEND_URL:-http://localhost:4000}
-    image: trimoyeeg/deton8-frontend:latest
+    image: deton8-frontend:latest
     ports:
       - "3000:3000"
     depends_on:
